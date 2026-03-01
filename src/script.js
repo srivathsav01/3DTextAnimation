@@ -13,7 +13,7 @@ const matcapTexture2 = textureLoader.load( import.meta.env.BASE_URL + 'textures/
 const gui = new GUI()
 const parameters = {
   text: 'Welcome',
-  wireframe: true,
+  wireframe: false,
   donutCount: 300
 }
 
