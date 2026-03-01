@@ -6,12 +6,12 @@ import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry.js'
 const canvas = document.querySelector('canvas.webgl')
 const scene = new THREE.Scene()
 const textureLoader = new THREE.TextureLoader()
-const matcapTexture = textureLoader.load('/textures/matcaps/8.png')
-const matcapTexture2 = textureLoader.load('/textures/matcaps/3.png')
+const matcapTexture = textureLoader.load('/static/textures/matcaps/8.png')
+const matcapTexture2 = textureLoader.load('/static/textures/matcaps/3.png')
 
 matcapTexture.colorSpace = THREE.SRGBColorSpace
 const fontLoader = new FontLoader()
-fontLoader.load('/fonts/helvetiker_regular.typeface.json',
+fontLoader.load('/static/fonts/helvetiker_regular.typeface.json',
     (font) => {
         const textGeometry = new TextGeometry('Srivathsav',
             {
